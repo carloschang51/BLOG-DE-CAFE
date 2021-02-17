@@ -1,0 +1,133 @@
+/* utilizables */
+
+.column-4 {
+    flex: 0 0 calc(33.3% - 1rem);
+}
+
+.column-6 {
+    flex: 0 0 calc(50% - 1rem);
+}
+
+.column-8 {
+    flex: 0 0 calc(66.6% - 1rem);
+}
+
+.column-10 {
+    flex: 0 0 calc(83.3%);
+}
+
+.column-12 {
+    flex: 0 0 calc(100%);
+}
+
+
+/* header */
+
+.bars {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navegation {
+    margin: 0;
+}
+
+.navegation a {
+    margin: 0 20px 0 0;
+}
+
+.navegation a:last-of-type {
+    margin-right: 0;
+}
+
+
+/* container main aside  */
+
+.contents-principal {
+    flex-direction: row;
+}
+
+
+/* main */
+
+.blog {
+    flex: 0 0 66.6%;
+}
+
+
+/* aside */
+
+.course-lists {
+    padding-left: 40px;
+}
+
+.container-course {
+    flex: 0 0 33.3%;
+}
+
+
+/* footer */
+
+.container-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social-media {
+    margin-top: 0;
+}
+
+.social-media a {
+    margin-right: 30px;
+}
+
+.social-media a:last-of-type {
+    margin-right: 0;
+}
+
+
+/*=====================================
+         WEBSITE WE
+=====================================*/
+
+.container-header-contact {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.site-header-contact .navegation a {
+    margin-top: 0;
+}
+
+.container-we {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*=====================================
+         WEBSITE COURSES
+=====================================*/
+
+.article-courses {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*=====================================
+         WEBSITE CONTACT
+=====================================*/
+
+.container-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container-form {
+    width: 50%;
+    margin: 0 auto;
+}

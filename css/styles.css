@@ -1,0 +1,381 @@
+:root {
+    --open-sans: 'Open Sans', sans-serif;
+    --pt-sans: 'PT sans', sans-serif;
+    --Brown-medium: #683012;
+    --Brown-dark: #4b230d;
+    --write: rgb(253, 253, 253);
+    --orange-light: #e65608;
+    --back-medium: rgba(27, 27, 27, 0.767);
+    --black-dark: rgba(29, 28, 28, 0.938);
+    --gray-medium: rgba(121, 115, 115, 0.897);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--open-sans);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+
+/* globales*/
+
+
+/* .container {
+    margin: 0 auto;
+    width: 95%;
+} */
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--pt-sans);
+    margin: 0;
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+
+h2 {
+    font-size: 3.8rem;
+}
+
+h3 {
+    font-size: 3.4rem;
+}
+
+h4 {
+    font-size: 2.4rem;
+}
+
+p {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*utilidades*/
+
+.button {
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--write);
+    background-color: var(--Brown-medium);
+    padding: 10px 20px;
+    transition: all .5s ease;
+    margin: 10px;
+}
+
+
+/*=====================================
+               HEADER
+=====================================*/
+
+.site-header {
+    background-image: url(../img/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.container-header {
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.site-header .bars {
+    padding-top: 20px;
+}
+
+.bars a h1 {
+    color: var(--write);
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 3.8rem;
+}
+
+.navegation {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+
+.navegation a {
+    color: var(--write);
+    font-weight: 400;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 2;
+}
+
+.navegation a:hover {
+    color: var(--orange-light);
+    border-bottom: 1px solid var(--orange-light);
+}
+
+
+/* container-tittles-header */
+
+.container-tittles-header {
+    color: var(--write);
+    margin-top: 100px;
+}
+
+
+/*=====================================
+    CONTAINER DEL ASIDE Y MAIN
+=====================================*/
+
+.contents-principal {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 95%;
+    margin: 0 auto;
+}
+
+
+/*=====================================
+               MAIN
+=====================================*/
+
+.blog h2 {
+    text-align: center;
+    margin: 30px 0;
+    color: var(--back-medium);
+}
+
+.container-article-blog {
+    margin-bottom: 50px;
+    border-bottom: 1px solid var(--gray-medium);
+}
+
+.container-article-blog:last-of-type {
+    border-bottom: none;
+}
+
+.content-blog h3 {
+    margin: 20px 0;
+    color: var(--back-medium);
+}
+
+.content-blog p {
+    color: var(--gray-medium);
+}
+
+
+/*=====================================
+               ASIDE
+=====================================*/
+
+.container-course h2 {
+    color: var(--back-medium);
+    text-align: center;
+    text-transform: capitalize;
+    margin: 30px 0;
+}
+
+.course-lists {
+    list-style: none;
+    padding-left: 0;
+}
+
+.course {
+    border-bottom: 1px solid var(--gray-medium);
+    margin-bottom: 10px;
+}
+
+.course:last-of-type {
+    border-bottom: none;
+}
+
+.course h4 {
+    color: var(--back-medium);
+}
+
+.course p {
+    color: var(--gray-medium);
+}
+
+.course span {
+    font-weight: 700;
+}
+
+.course-lists .button:hover {
+    background-color: var(--Brown-dark);
+}
+
+
+/*=====================================
+               FOOTER
+=====================================*/
+
+.site-footer {
+    background-color: var(--black-dark);
+    padding: 40px 0;
+    margin-top: 30px;
+}
+
+.container-footer {
+    text-align: center;
+}
+
+.container-footer h4 {
+    color: var(--write);
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.social-media a {
+    color: var(--write);
+    font-size: 3.5rem;
+    display: inline-block;
+    line-height: 1.5;
+}
+
+.social-media a:hover {
+    color: var(--orange-light);
+    border-bottom: 1px solid var(--orange-light);
+}
+
+
+/*==========================================================================================*/
+
+
+/*=====================================
+       WEBSITE  WE
+=====================================*/
+
+.site-header-contact {
+    background-color: var(--black-dark);
+    padding: 40px 0;
+    text-align: center;
+}
+
+.site-header-contact .navegation a {
+    margin-top: 20px;
+}
+
+
+/* main we */
+
+.container-we {
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.site-main-we h2 {
+    text-align: center;
+    margin: 30px 0;
+    color: var(--back-medium);
+}
+
+.container-we .column-6 p {
+    color: var(--gray-medium);
+    text-align: justify;
+}
+
+
+/*==========================================================================================*/
+
+
+/*=====================================
+           WEBSITE COURSES
+=====================================*/
+
+.site-main-curses {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.site-main-curses h2 {
+    text-align: center;
+    color: var(--b);
+    margin: 30px 0;
+}
+
+.article-courses {
+    margin-bottom: 50px;
+    padding-bottom: 15px;
+}
+
+.article-courses .column-8 span {
+    color: black;
+}
+
+
+/*==========================================================================================*/
+
+
+/*=====================================
+           WEBSITE CONTACT
+=====================================*/
+
+.site-main-contact {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.site-main-contact h2 {
+    text-align: center;
+    color: var(--back-medium);
+    margin: 30px 0;
+}
+
+.forms-contact {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.container-form label {
+    display: block;
+    width: 100%;
+}
+
+.container-form input {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+}
+
+.container-form textarea {
+    display: block;
+    width: 100%;
+}
+
+.container-form .button-primario {
+    width: 30%;
+    margin-top: 10px;
+    border: none;
+}
