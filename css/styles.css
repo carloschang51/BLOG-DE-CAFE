@@ -129,6 +129,7 @@ a {
     text-transform: uppercase;
     font-weight: 700;
     line-height: 2;
+    transition: all .5s ease;
 }
 
 .navegation a:hover {
